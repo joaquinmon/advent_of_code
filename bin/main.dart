@@ -6,7 +6,8 @@ import 'package:advent_of_code/advent_of_code.dart' as advent_of_code;
 
 void main(List<String> arguments) {
   
-  print('Dia 01: ');  dia01.main();
+  print('2022: ');  
+  dia01.main();
    
    
    
