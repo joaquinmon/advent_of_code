@@ -15,7 +15,12 @@ void main() {
     }
   }
   arr.sort();
-  print('Dia 1: ');
-  print(arr.last);
-  print(arr[arr.length - 1] + arr[arr.length - 2] + arr[arr.length - 3]);
+  print(' Dia 1: ');
+
+  var result = arr.last;
+  print('   $result');
+
+  var result2 = arr[arr.length - 1] + arr[arr.length - 2] + arr[arr.length - 3];
+  print('   $result2');
+  
 }
