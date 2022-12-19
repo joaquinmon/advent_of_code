@@ -2,7 +2,7 @@ import 'dart:io';
 
 
 void main() {
-  File file = File('../lib/2022/data/dia03.txt');
+  File file = File('../advent_of_code/lib/2022/data/dia03.txt');
   int result = 0, result2 = 0;
   int lineaNum = 0;
   List cntLineas = [0, 0, 0];
