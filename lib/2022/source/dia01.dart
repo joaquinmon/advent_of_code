@@ -6,6 +6,7 @@ void main() {
   File file = File('../advent_of_code/lib/2022/data/dia01.txt');
   List<int> arr = [];
   int cur = 0;
+
   for (String line in file.readAsLinesSync()) {
     if (line == '') {
       arr.add(cur);
@@ -14,6 +15,7 @@ void main() {
       cur += int.parse(line);
     }
   }
+  
   arr.sort();
   print(' Dia 1: ');
 
