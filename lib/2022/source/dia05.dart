@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 import 'package:path/path.dart';
 
-/// Yikes, this code feels like a train-wreck...
+
 main() async {
   File file = File('../advent_of_code/lib/2022/data/dia05.txt');
   List<String> lineas = File(file.path).readAsLinesSync();
@@ -67,6 +67,6 @@ main() async {
     result2 += pila2[key]?.last ?? "";
   }
   print(" Dia 5: ");
-  print('   $result'); // Part 1: PTWLTDSJV , Part 2: WZMFVGGZP
+  print('   $result'); 
   print('   $result2');
 }
