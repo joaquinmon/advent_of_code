@@ -18,10 +18,10 @@ void main() {
   for (int i = 0; i < m; ++i) {
     list.clear();
     for (int j = 0; j < n; ++j) {
-      while (list.length > 0 && h[i][j] > h[i][list.last]) {
+      while (list.isNotEmpty && h[i][j] > h[i][list.last]) {
         list.removeLast();
       }
-      if (list.length > 0) {
+      if (list.isNotEmpty) {
         puntos[i][j] *= j - list.last;
       } else {
         correcto[i][j] = 1;
@@ -31,10 +31,10 @@ void main() {
     }
     list.clear();
     for (int j = n - 1; j >= 0; --j) {
-      while (list.length > 0 && h[i][j] > h[i][list.last]) {
+      while (list.isNotEmpty && h[i][j] > h[i][list.last]) {
         list.removeLast();
       }
-      if (list.length > 0) {
+      if (list.isNotEmpty) {
         puntos[i][j] *= list.last - j;
       } else {
         correcto[i][j] = 1;
@@ -47,10 +47,10 @@ void main() {
   for (int j = 0; j < n; ++j) {
     list.clear();
     for (int i = 0; i < m; ++i) {
-      while (list.length > 0 && h[i][j] > h[list.last][j]) {
+      while (list.isNotEmpty && h[i][j] > h[list.last][j]) {
         list.removeLast();
       }
-      if (list.length > 0) {
+      if (list.isNotEmpty) {
         puntos[i][j] *= i - list.last;
       } else {
         correcto[i][j] = 1;
@@ -60,10 +60,10 @@ void main() {
     }
     list.clear();
     for (int i = m - 1; i >= 0; --i) {
-      while (list.length > 0 && h[i][j] > h[list.last][j]) {
+      while (list.isNotEmpty && h[i][j] > h[list.last][j]) {
         list.removeLast();
       }
-      if (list.length > 0) {
+      if (list.isNotEmpty) {
         puntos[i][j] *= list.last - i;
       } else {
         correcto[i][j] = 1;
