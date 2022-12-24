@@ -56,8 +56,8 @@ void main() {
       break;
     }
   }
-  print('Dia 14: ');
-  print(result);
+  print(" Dia 14: ");
+  print('   $result');
 }
 
 void draw(int x0, int y0, int x1, int y1, List<List<String>> mapa) {
