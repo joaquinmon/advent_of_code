@@ -18,6 +18,8 @@ import 'package:advent_of_code/2022/source/dia17.dart' as dia17_22;
 import 'package:advent_of_code/2022/source/dia18.dart' as dia18_22;
 import 'package:advent_of_code/2022/source/dia19.dart' as dia19_22;
 import 'package:advent_of_code/2022/source/dia20.dart' as dia20_22;
+import 'package:advent_of_code/2022/source/dia21.dart' as dia21_22;
+
 
 
 void main(List<String> arguments) {
@@ -43,5 +45,6 @@ void main(List<String> arguments) {
   dia18_22.main();
   dia19_22.main();
   dia20_22.main();
+  dia21_22.main();
   
 }
