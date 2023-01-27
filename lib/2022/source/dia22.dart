@@ -138,7 +138,7 @@ void main() {
     cur = mover(cur, pasos[i + 1]);
   }
 
-  print(" Dia 21: ");
+  print(" Dia 22: ");
   var result = 1000 * (cur.x + 1) + 4 * (cur.y + 1) + cur.d;
   print('   $result');
   
