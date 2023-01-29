@@ -29,11 +29,11 @@ void main() {
   for (int i = 0; i < nRondas; ++i) {
     Map<Point<int>, Point<int>> obj = {};
     Map<Point<int>, int> cuenta = {};
-    pos.forEach((p) {
+    for (var p in pos) {
       List<bool> bloqueo = List.generate(
           8, (j) => pos.contains(Point(p.x + dx[j], p.y + dy[j])));
       if (bloqueo.indexWhere((element) => element) == -1) {
-        return;
+        continue;
       }
 
       for (int j = 0; j < dirGrupos.length; ++j) {
@@ -45,7 +45,7 @@ void main() {
           break;
         }
       }
-    });
+    }
 
     Set<Point<int>> nuevaPos = pos
         .map((e) => obj.containsKey(e) && cuenta[obj[e]!] == 1
@@ -71,5 +71,5 @@ void main() {
   print(" Dia 23: ");
   var result = (maxx - minx + 1) * (maxy - miny + 1) - pos.length;
   print('   $result');
-  
+
 }
